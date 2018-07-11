@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Assignment One</title>
+		<link rel="stylesheet" type="text/css" href="asscript.css">
+		
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" href="index.css" type="text/css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.button {
+    			background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+	cursor: pointer;
+	margin-left: 50px
+}
+
+.button2 {background-color: #f44336;
+		border-radius: 8px;
+		opacity: 0.8;
+  		transition: 0.3s;
+		display:block;
+		margin-left: 500px;	
+	}
+	</head>
+	</style>
+
+<body>
+    <script src="asscript.js"></script>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="popup">Hey! Enter your details. </p>
+        </div>
+    
+        </div>
+    
+    <div class="main">
+<div class="col-lg-8" style="margin-bottom:10px;">
+						<h2>Hey! Enter your details.</h2>
+						<form role="form">
+							<div class="form-group">
+								<label>Name:</label>
+								<input type="text" id="name-input" required>
+							</div>
+							<div class="form-group">
+								<label>Age:&nbsp;&nbsp;&nbsp; </label>
+								 <input type="number" pattern="[0-9][0-9]" id="age-input" required>
+							</div>
+						 
+						</form>
+					</div>
+   <button class="button2" id="myButton" class="btn btn-primary" onclick="testfunction()">Submit</button>
+    <button class="button2" onclick="clearData()" class="btn btn-primary">Clear Table Data</button>
+    <button class="button2" class="btn btn-primary" ><a href="second.html" >Click to See table</a></button>
+    
+    <!-- <table id="table0">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+    </table> -->
+       
+
+</div>
+
+</body>
+
+</html>
